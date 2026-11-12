@@ -1,0 +1,423 @@
+{
+  "pipeline_status": "SUCCESS",
+  "execution_time_seconds": 15.27,
+  "parameters": {
+    "seed": 20261022,
+    "scale": 1.0,
+    "cutoff_date": "2026-10-31",
+    "clean_enabled": true
+  },
+  "expected_scaled_volumes": {
+    "accounts.csv": 1500,
+    "quotes.csv": 10000,
+    "sales_orders.csv": 7000,
+    "invoices.csv": 8000,
+    "status_events.csv": 47486
+  },
+  "quality_gates": {
+    "gate_1_all_artifacts_valid_and_parsed": true,
+    "gate_2_volume_targets_exact": true,
+    "gate_3_deterministic_reproducibility": true,
+    "gate_4_primary_keys_unique": true,
+    "gate_5_foreign_keys_and_transitive_links_valid": true,
+    "gate_6_cross_table_date_chronology_valid": true,
+    "gate_7_o2c_workflow_continuity_valid": true,
+    "gate_8_subledger_and_arithmetic_reconciled": true,
+    "gate_9_zero_false_positives_and_negatives": true,
+    "gate_10_exact_monetary_leakage_reconciled": true
+  },
+  "row_counts": {
+    "accounts.csv": 1500,
+    "disputes.csv": 45,
+    "invoice_lines.csv": 15651,
+    "invoices.csv": 8000,
+    "order_lines.csv": 13701,
+    "payments.csv": 7930,
+    "quote_lines.csv": 19690,
+    "quotes.csv": 10000,
+    "sales_orders.csv": 7000,
+    "shipments.csv": 13726,
+    "status_events.csv": 47486
+  },
+  "artifact_verification": {
+    "all_artifacts_present_and_valid": true,
+    "total_verified_files": 29,
+    "missing_files": [],
+    "empty_files": [],
+    "content_validation_errors": [],
+    "verified_artifact_details": {
+      "data/accounts.csv": {
+        "size_bytes": 106291,
+        "rows": 1500,
+        "schema_valid": true
+      },
+      "data/accounts.json": {
+        "size_bytes": 295255,
+        "rows": 1500,
+        "valid_json": true
+      },
+      "data/quotes.csv": {
+        "size_bytes": 736613,
+        "rows": 10000,
+        "schema_valid": true
+      },
+      "data/quotes.json": {
+        "size_bytes": 2030949,
+        "rows": 10000,
+        "valid_json": true
+      },
+      "data/quote_lines.csv": {
+        "size_bytes": 1223558,
+        "rows": 19690,
+        "schema_valid": true
+      },
+      "data/quote_lines.json": {
+        "size_bytes": 3644858,
+        "rows": 19690,
+        "valid_json": true
+      },
+      "data/sales_orders.csv": {
+        "size_bytes": 534083,
+        "rows": 7000,
+        "schema_valid": true
+      },
+      "data/sales_orders.json": {
+        "size_bytes": 1418962,
+        "rows": 7000,
+        "valid_json": true
+      },
+      "data/order_lines.csv": {
+        "size_bytes": 879110,
+        "rows": 13701,
+        "schema_valid": true
+      },
+      "data/order_lines.json": {
+        "size_bytes": 2892800,
+        "rows": 13701,
+        "valid_json": true
+      },
+      "data/shipments.csv": {
+        "size_bytes": 1221774,
+        "rows": 13726,
+        "schema_valid": true
+      },
+      "data/shipments.json": {
+        "size_bytes": 3390393,
+        "rows": 13726,
+        "valid_json": true
+      },
+      "data/invoices.csv": {
+        "size_bytes": 809658,
+        "rows": 8000,
+        "schema_valid": true
+      },
+      "data/invoices.json": {
+        "size_bytes": 2490546,
+        "rows": 8000,
+        "valid_json": true
+      },
+      "data/invoice_lines.csv": {
+        "size_bytes": 1096353,
+        "rows": 15651,
+        "schema_valid": true
+      },
+      "data/invoice_lines.json": {
+        "size_bytes": 3159003,
+        "rows": 15651,
+        "valid_json": true
+      },
+      "data/payments.csv": {
+        "size_bytes": 750124,
+        "rows": 7930,
+        "schema_valid": true
+      },
+      "data/payments.json": {
+        "size_bytes": 1963942,
+        "rows": 7930,
+        "valid_json": true
+      },
+      "data/disputes.csv": {
+        "size_bytes": 4614,
+        "rows": 45,
+        "schema_valid": true
+      },
+      "data/disputes.json": {
+        "size_bytes": 12626,
+        "rows": 45,
+        "valid_json": true
+      },
+      "data/status_events.csv": {
+        "size_bytes": 4110250,
+        "rows": 47486,
+        "schema_valid": true
+      },
+      "data/status_events.json": {
+        "size_bytes": 10900676,
+        "rows": 47486,
+        "valid_json": true
+      },
+      "output/ground_truth.csv": {
+        "size_bytes": 54816,
+        "rows": 255,
+        "schema_valid": true
+      },
+      "output/exceptions_and_decisions.csv": {
+        "size_bytes": 67418,
+        "rows": 255,
+        "schema_valid": true
+      },
+      "output/process_delays.csv": {
+        "size_bytes": 79151,
+        "rows": 1918,
+        "schema_valid": true
+      },
+      "output/ground_truth.json": {
+        "size_bytes": 110102,
+        "rows": 255,
+        "valid_json": true
+      },
+      "output/source_manifest.json": {
+        "size_bytes": 1449,
+        "valid_json": true,
+        "required_keys_present": true
+      },
+      "output/validation_summary.json": {
+        "size_bytes": 7466,
+        "valid_json": true,
+        "required_keys_present": true
+      },
+      "output/seed_data.sql": {
+        "size_bytes": 14204736,
+        "ddl_tables_verified": 11,
+        "dml_inserts_verified": 11
+      }
+    }
+  },
+  "validation_and_detection_summary": {
+    "total_ground_truth_anomalies": 255,
+    "total_detected_anomalies": 255,
+    "true_positives": 255,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "revenue_leakage_financial_summary": {
+      "total_contracted_order_book_value": 7448119674.78,
+      "total_gross_invoiced_value": 7452085124.26,
+      "ground_truth_total_financial_exposure": 81211156.35,
+      "detected_total_financial_exposure": 81211156.35,
+      "total_monetary_variance": 0.0,
+      "exact_monetary_reconciliation_verified": true,
+      "direct_revenue_leakage_amount": 23125433.11,
+      "direct_revenue_leakage_pct_of_order_book": 0.3105,
+      "overbilling_and_duplicate_liability_amount": 35171943.18,
+      "ar_and_workflow_compliance_exposure_amount": 22913780.06,
+      "breakdown_by_issue_type": {
+        "DISPUTE_NOT_REFLECTED_IN_AR": 10975711.24,
+        "DUPLICATE_INVOICE": 20476890.04,
+        "INVOICE_EXCEEDS_FULFILLED_QTY": 2056522.6,
+        "ORDER_CLOSED_WITH_UNPAID_INVOICE": 8285070.86,
+        "PARTIAL_SHIPMENT": 13091454.25,
+        "PAYMENT_ALLOCATED_TWICE": 12638530.54,
+        "STATUS_EVENT_SKIPS_REQUIRED_STATE": 11938068.82,
+        "UNDERBILLING_REVENUE_LEAKAGE": 1748908.0
+      }
+    },
+    "hard_negative_edge_cases_tested": 110,
+    "hard_negative_false_positives": 0,
+    "false_positive_control_audit": {
+      "legitimate_split_shipments": {
+        "cases_tested": 25,
+        "false_positives_triggered": 0
+      },
+      "same_day_50_50_split_invoices": {
+        "cases_tested": 25,
+        "false_positives_triggered": 0
+      },
+      "legitimate_split_payments": {
+        "cases_tested": 20,
+        "false_positives_triggered": 0
+      },
+      "active_within_sla_backorders": {
+        "cases_tested": 20,
+        "false_positives_triggered": 0
+      },
+      "resolved_historical_disputes": {
+        "cases_tested": 20,
+        "false_positives_triggered": 0
+      }
+    },
+    "per_class_evaluation": {
+      "DISPUTE_NOT_REFLECTED_IN_AR": {
+        "ground_truth": 25,
+        "detected": 25,
+        "tp": 25,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "expected_leakage_amount": 10975711.24,
+        "detected_leakage_amount": 10975711.24,
+        "monetary_variance": 0.0
+      },
+      "DUPLICATE_INVOICE": {
+        "ground_truth": 40,
+        "detected": 40,
+        "tp": 40,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "expected_leakage_amount": 20476890.04,
+        "detected_leakage_amount": 20476890.04,
+        "monetary_variance": 0.0
+      },
+      "INVOICE_EXCEEDS_FULFILLED_QTY": {
+        "ground_truth": 25,
+        "detected": 25,
+        "tp": 25,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "expected_leakage_amount": 2056522.6,
+        "detected_leakage_amount": 2056522.6,
+        "monetary_variance": 0.0
+      },
+      "ORDER_CLOSED_WITH_UNPAID_INVOICE": {
+        "ground_truth": 25,
+        "detected": 25,
+        "tp": 25,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "expected_leakage_amount": 8285070.86,
+        "detected_leakage_amount": 8285070.86,
+        "monetary_variance": 0.0
+      },
+      "PARTIAL_SHIPMENT": {
+        "ground_truth": 50,
+        "detected": 50,
+        "tp": 50,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "expected_leakage_amount": 13091454.25,
+        "detected_leakage_amount": 13091454.25,
+        "monetary_variance": 0.0
+      },
+      "PAYMENT_ALLOCATED_TWICE": {
+        "ground_truth": 25,
+        "detected": 25,
+        "tp": 25,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "expected_leakage_amount": 12638530.54,
+        "detected_leakage_amount": 12638530.54,
+        "monetary_variance": 0.0
+      },
+      "STATUS_EVENT_SKIPS_REQUIRED_STATE": {
+        "ground_truth": 25,
+        "detected": 25,
+        "tp": 25,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "expected_leakage_amount": 11938068.82,
+        "detected_leakage_amount": 11938068.82,
+        "monetary_variance": 0.0
+      },
+      "UNDERBILLING_REVENUE_LEAKAGE": {
+        "ground_truth": 40,
+        "detected": 40,
+        "tp": 40,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "expected_leakage_amount": 1748908.0,
+        "detected_leakage_amount": 1748908.0,
+        "monetary_variance": 0.0
+      }
+    },
+    "process_delays_flagged": 1918,
+    "reproducibility_verified": true,
+    "step8_schema_validation": {
+      "primary_key_uniqueness": true,
+      "primary_key_details": {
+        "accounts_pk_unique": true,
+        "quotes_pk_unique": true,
+        "quote_lines_pk_unique": true,
+        "sales_orders_pk_unique": true,
+        "order_lines_pk_unique": true,
+        "shipments_pk_unique": true,
+        "invoices_pk_unique": true,
+        "invoice_lines_pk_unique": true,
+        "payments_pk_unique": true,
+        "disputes_pk_unique": true,
+        "status_events_pk_unique": true
+      },
+      "foreign_key_integrity": true,
+      "foreign_key_relationship_details": {
+        "quotes_account_id_in_accounts": true,
+        "quote_lines_quote_id_in_quotes": true,
+        "sales_orders_quote_id_in_quotes": true,
+        "sales_orders_account_id_in_accounts": true,
+        "order_lines_order_id_in_sales_orders": true,
+        "shipments_order_id_in_sales_orders": true,
+        "shipments_order_line_id_in_order_lines": true,
+        "invoices_order_id_in_sales_orders": true,
+        "invoices_account_id_in_accounts": true,
+        "invoice_lines_invoice_id_in_invoices": true,
+        "invoice_lines_order_line_id_in_order_lines": true,
+        "payments_invoice_id_in_invoices": true,
+        "payments_account_id_in_accounts": true,
+        "disputes_invoice_id_in_invoices": true,
+        "disputes_account_id_in_accounts": true,
+        "status_events_polymorphic_entity_id_valid": true,
+        "order_account_matches_quote_account": true,
+        "invoice_account_matches_order_account": true,
+        "payment_account_matches_invoice_account": true,
+        "dispute_account_matches_invoice_account": true,
+        "shipment_order_matches_order_line_order": true,
+        "invoice_line_order_matches_invoice_header_order": true
+      },
+      "shipment_header_granularity_consistent": true,
+      "allowed_enums_valid": true,
+      "date_ordering_valid": true,
+      "cross_table_date_chronology_details": {
+        "account_created_le_quote_date_le_valid_until": true,
+        "quote_date_le_order_date_le_valid_until": true,
+        "order_date_le_ship_date": true,
+        "ship_date_le_invoice_date_le_due_date": true,
+        "invoice_date_le_payment_date": true,
+        "invoice_date_le_dispute_date": true,
+        "status_event_timestamps_monotonic": true,
+        "all_cross_table_date_rules_passed": true
+      },
+      "o2c_workflow_state_machine_audit": {
+        "state_chain_continuity_intact": true,
+        "terminal_event_matches_entity_status": true,
+        "illegal_workflow_bypasses_detected": 25
+      },
+      "arithmetic_reconciliation_valid": true,
+      "invoice_lines_reconcile_to_invoice_header": true,
+      "independent_payment_ledger_reconciled": true,
+      "account_ar_subledger_reconciled": true
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "seed": 20261022,
+  "row_counts": {
+    "accounts.csv": 1500,
+    "disputes.csv": 45,
+    "invoice_lines.csv": 15651,
+    "invoices.csv": 8000,
+    "order_lines.csv": 13701,
+    "payments.csv": 7930,
+    "quote_lines.csv": 19690,
+    "quotes.csv": 10000,
+    "sales_orders.csv": 7000,
+    "shipments.csv": 13726,
+    "status_events.csv": 47486
+  },
+  "sha256_checksums": {
+    "accounts.csv": "8893ed649e28baff8138c673c72e8a298a6fcb84f15ad7f2b30c1fd72b0d4d19",
+    "disputes.csv": "e414efb0d939ac9454089954b09d84368677ee2afb842c12c923ef9f471f73e1",
+    "invoice_lines.csv": "73fec6c3729e76e8142d000a1c76668e492231d8ca12670ec8fe24fc08b50646",
+    "invoices.csv": "7696e86b0472fa58e638461843d9a6b362b348fad2da2321adec0a40d0decbbb",
+    "order_lines.csv": "6bf21aa81d3887c1f2921a759787c69d3dc474d8d64e8bb5a834d75f27e9f07e",
+    "payments.csv": "76804520d7815730a8b5ea8172c251bcd6f6da8c40a271329f6e51d35e2576fc",
+    "quote_lines.csv": "00bd411a323885e43cdc00b28259b7d07bfce8abc9270f92f865ec4ff851c622",
+    "quotes.csv": "ff70bdc87415d81ec23064d90913c91c67e442e5534ee362b9b2e4ca0d90f836",
+    "sales_orders.csv": "f82a39584a44cfe2c5ef9d5e29565d19d7c63ca5b0e9a881cb616df57c7ab62c",
+    "shipments.csv": "90eb6cc83ec1a38b5f3cd36ae23b705e123e41611d85f2f20c3f1fb55d61b84b",
+    "status_events.csv": "548c8422d74a5cf87922cf4b8f5ee7edc10c2f3b095336c6969887ec73ebd21e"
+  },
+  "reproducibility_verified_across_two_runs": true
+}
