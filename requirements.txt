@@ -1,2 +1,5 @@
+streamlit
 pandas>=2.0.0
 pytest>=7.4.0
+plotly
+numpy
